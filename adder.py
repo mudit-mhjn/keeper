@@ -21,3 +21,8 @@ def addProject(db, pointer):
     #print(sql)
     pointer.execute(sql)
     print("PROJECT CREATED")
+
+
+"""
+# TODO: TO add reminder in the selected
+"""

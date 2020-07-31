@@ -10,14 +10,26 @@ pointer = db.cursor()
 pointer.execute("USE keeper")
 print('')
 print('''###########################################################################
-       Welcome to your personal project keeper, Here's a list of options for you
-       ###########################################################################
+Welcome to your personal project keeper, Here's a list of options for you
+###########################################################################
 
-       >SHOW CURRENT PROJECTS
-       >ADD NEW PROJECT
-       >GOTO PROJECT
-       >EXIT''')
+>SHOW CURRENT PROJECTS
+>ADD NEW PROJECT
+>GOTO PROJECT
+>HELP
+>EXIT''')
 
+h = '''
+SHOW                    List all the current projects.
+ADD                     Start a new project.
+GOTO <project_name>     Go to project.
+TODOS <project_name>    Shows the reminders of project.
+EXIT                    Exit from the log.
+
+In the project:
+REMIND                  Add To-Do for your project
+TODOS                   Shows all the To-do from the project 
+'''
 #pointer.execute("SHOW TABLES")
 while True:
     #print(">SHOW LATEST WORK")
